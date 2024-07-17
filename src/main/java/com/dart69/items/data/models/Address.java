@@ -2,6 +2,9 @@ package com.dart69.items.data.models;
 
 import com.dart69.core.utils.StringUtils;
 import com.dart69.items.data.models.interfaces.Identifiable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.Builder;
 import lombok.Value;
 import lombok.With;
@@ -14,9 +17,12 @@ import java.util.stream.Collectors;
 @Value
 @With
 @Builder
+@Entity
 public class Address implements Identifiable<Integer> {
     private final static String DELIMITER = ", ";
 
+    @Id
+    @GeneratedValue
     @NotNull
     Integer id;
     @NotNull
