@@ -13,6 +13,7 @@ import java.util.Collection;
 @With
 @Builder
 public class Warehouse implements Building {
+    @NotNull
     Integer id;
     @NotNull
     String name;

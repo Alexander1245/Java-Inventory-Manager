@@ -11,7 +11,8 @@ import org.jetbrains.annotations.Nullable;
 @With
 @Builder
 public class Product implements Item {
-    Integer id;
+    @NotNull
+      Integer id;
     @NotNull
     String name;
     @Nullable

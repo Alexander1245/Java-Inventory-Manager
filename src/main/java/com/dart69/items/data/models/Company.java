@@ -13,7 +13,8 @@ import java.util.Collection;
 @With
 @Builder
 public class Company implements Building {
-    Integer id;
+    @NotNull
+      Integer id;
     @NotNull
     String name;
     @Nullable
